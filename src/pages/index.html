@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario | DOM</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        
+        <form id="formularioProducto" class="formulario">
+
+            <h1>Registro de productos</h1>
+
+            <br><br>
+
+            <label for="nombre" class="nombre">Nombre del cliente</label>
+            <input type="text" id="nombre" class="input-nombre" required>
+
+            <br><br>
+
+            <label for="producto" class="nombre">Nombre del producto</label>
+            <input type="text" id="producto" class="input-nombre" required>
+
+            <br><br>
+
+            <label for="precio" class="nombre">Precio del producto</label>
+            <input type="number" id="precio" class="input-nombre" min="0.01" step="0.01" required>
+
+            <br><br>
+
+            <button type="submit">Registrar producto</button>
+        </form>
+
+        <h2 class="resultado">Resultado</h2>
+        <br>
+        <p id="resultado" class="resultado">Aqui aparece la informacion del producto</p>
+
+        <script src="../js/app.js"></script>
+
+    </div>
+</body>
+</html>
